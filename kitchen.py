@@ -1,14 +1,3 @@
-# kitchen.py
-# Paluto Restaurant — Distributed Kitchen System
-#
-# Windows requires TWO separate runs (MPI + multiprocessing can't mix):
-#
-#   STEP 1:  mpiexec -n 5 python kitchen.py
-#            (MPI phase — Head Chef sends tickets, cooks receive them)
-#
-#   STEP 2:  python kitchen.py --cook
-#            (Cooking phase — shared memory board + Lock synchronization)
-
 import sys
 import io
 import os
