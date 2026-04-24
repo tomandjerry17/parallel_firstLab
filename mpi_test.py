@@ -1,7 +1,3 @@
-# mpi_test.py
-# Member 1 - Environment verification
-# Run with: mpirun -np 4 python mpi_test.py
-
 from mpi4py import MPI
 
 comm = MPI.COMM_WORLD
