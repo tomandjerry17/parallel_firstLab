@@ -23,8 +23,12 @@ mpiexec -n 5 python mpi_test.py
 ```bash
 mpiexec -n 5 python kitchen.py
 ```
-
 ### Step 3 — Cooking Phase (shared memory + synchronization)
+```bash
+python kitchen.py --no-lock
+```
+
+### Step 4 — Cooking Phase WITH lock — shows the fix
 ```bash
 python kitchen.py --cook
 ```
